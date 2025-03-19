@@ -100,7 +100,7 @@ export const resources = [
 		link: 'https://quranicaudio.com/',
 		categories: ['telawat']
 	}
-];
+].map((r) => ({ ...r, categories: [...r.categories].sort() }));
 
 export const categories = {
 	all: {
