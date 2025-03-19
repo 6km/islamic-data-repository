@@ -2,7 +2,7 @@ export const resources = [
 	{
 		name: 'خط مصحف المدينة المنورة',
 		description: 'الخط المستخدم في مصحف المدينة المنورة لمجمع الملك فهد -رَحِمَهُ اللَّهُ-',
-		author: 'نُقايَة',
+		author: 'مجمع الملك فهد لطباعة المصحف الشريف',
 		link: 'https://github.com/nuqayah/qpc-fonts',
 		categories: ['fonts']
 	},
