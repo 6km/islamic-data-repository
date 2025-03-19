@@ -19,3 +19,8 @@ html, body {
     font-family: Kitab;
     line-height: normal;
 }
+
+img {
+    user-select: none;
+    pointer-events: none;
+}
