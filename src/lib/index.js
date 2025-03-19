@@ -92,6 +92,13 @@ export const resources = [
 		author: 'Quran.com',
 		link: 'https://quranjs.com/',
 		categories: ['quran', 'api']
+	},
+	{
+		name: 'QuranicAudio',
+		description: 'يحتوي على العديد من تلاوات القرآن الكريم بأصوات العديد من القراء.',
+		author: 'Quran.com',
+		link: 'https://quranicaudio.com/',
+		categories: ['quran', 'api']
 	}
 ];
 
