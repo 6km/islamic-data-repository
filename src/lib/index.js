@@ -64,6 +64,13 @@ export const resources = [
 		author: 'مجمع الملك فهد لطباعة المصحف الشريف',
 		link: 'https://qurancomplex.gov.sa/techquran/dev/',
 		categories: ['quran', 'fonts']
+	},
+	{
+		name: 'خط كِتاب',
+		description: 'خط نسخ عربي تقليدي',
+		author: 'خالد حسني',
+		link: 'https://github.com/nuqayah/kitab-font',
+		categories: ['fonts']
 	}
 ];
 
