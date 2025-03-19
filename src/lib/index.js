@@ -88,7 +88,7 @@ export const resources = [
 	},
 	{
 		name: 'QuranJS',
-		description: 'يُقدِّمُ بياناتِ النصِّ القرآني والترجمات وبعض الخطوط لعرض النص القرآني.',
+		description: 'للتعامل مع واجهة برمجة التطبيقات (API) لموقع Quran.com',
 		author: 'Quran.com',
 		link: 'https://quranjs.com/',
 		categories: ['quran', 'api']
