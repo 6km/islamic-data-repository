@@ -71,6 +71,13 @@ export const resources = [
 		author: 'خالد حسني',
 		link: 'https://github.com/nuqayah/kitab-font',
 		categories: ['fonts']
+	},
+	{
+		name: 'Every Ayah',
+		description: 'يوفر لك صوراً وتلاواتٍ عاليةَ الجودةِ للآيات القرآنية',
+		author: 'فريق Every Ayah والمساهمون به',
+		link: 'https://everyayah.com/',
+		categories: ['api']
 	}
 ];
 
