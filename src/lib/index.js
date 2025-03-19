@@ -99,6 +99,13 @@ export const resources = [
 		author: 'Quran.com',
 		link: 'https://quranicaudio.com/',
 		categories: ['telawat']
+	},
+	{
+		name: 'مصحف المدينة النبوية للنشر الحاسوبي',
+		description: 'يتضمن خط الرسم العثماني الموافق لمصحف المدينة النبوية بروايتي حفص وورش.',
+		author: 'مجمع الملك فهد لطباعة المصحف الشريف',
+		link: 'https://nashr.qurancomplex.gov.sa/',
+		categories: ['tools']
 	}
 ].map((r) => ({ ...r, categories: [...r.categories].sort() }));
 
@@ -122,6 +129,11 @@ export const categories = {
 		name_ar: 'تلاوات القرآن',
 		name_en: 'Quran Recitations',
 		tag_class: 'text-red-700 bg-red-200/50 border-red-800/20'
+	},
+	tools: {
+		name_ar: 'أدوات وبرامج',
+		name_en: 'Tools & Programs',
+		tag_class: 'text-pink-700 bg-pink-200/50 border-pink-800/20'
 	},
 	hadeeth: {
 		name_ar: 'الأحاديث',
