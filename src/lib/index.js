@@ -49,7 +49,7 @@ export const resources = [
 		description: 'توفِّر لك تلاوات لكل آية/سورة. كما توفِّر أيضاً صوراً لآيات القرآن الكريم.',
 		author: 'Islamic Network',
 		link: 'https://alquran.cloud/api',
-		categories: ['api']
+		categories: ['telawat', 'api']
 	},
 	{
 		name: 'خطوط القراءات العشر',
@@ -77,7 +77,7 @@ export const resources = [
 		description: 'يوفر لك صوراً وتلاواتٍ عاليةَ الجودةِ للآيات القرآنية',
 		author: 'فريق Every Ayah والمساهمون به',
 		link: 'https://everyayah.com/',
-		categories: ['api']
+		categories: ['telawat', 'api']
 	},
 	{
 		name: 'تنزيل Tanzil',
@@ -98,7 +98,7 @@ export const resources = [
 		description: 'يحتوي على العديد من تلاوات القرآن الكريم بأصوات العديد من القراء.',
 		author: 'Quran.com',
 		link: 'https://quranicaudio.com/',
-		categories: ['quran', 'api']
+		categories: ['telawat']
 	}
 ];
 
@@ -117,6 +117,11 @@ export const categories = {
 		name_ar: 'القرآن الكريم وعلومه',
 		name_en: 'Quran',
 		tag_class: 'text-purple-700 bg-purple-200 border-purple-800/20'
+	},
+	telawat: {
+		name_ar: 'تلاوات القرآن',
+		name_en: 'Quran Recitations',
+		tag_class: 'text-red-700 bg-red-200/50 border-red-800/20'
 	},
 	hadeeth: {
 		name_ar: 'الأحاديث',
