@@ -22,7 +22,7 @@
 <div class="mx-auto mt-4 flex w-[512px] max-w-full flex-wrap justify-center gap-2 px-2">
 	{#each Object.entries(categories) as [slug, category]}
 		<Button
-			class="focus:ring-3 focus:ring-blue-400 focus:ring-offset-2"
+			class="font-semibold focus:ring-blue-400 focus:ring-offset-2 focus-visible:ring-3 data-[selected=true]:bg-blue-400 data-[selected=true]:text-white"
 			onclick={() => {
 				selected_category = slug;
 			}}
@@ -33,15 +33,15 @@
 	{/each}
 </div>
 
-<div class="mx-auto mt-8 flex w-[880px] max-w-full flex-wrap gap-4 px-2">
+<div class="mx-auto mt-8 mb-8 flex w-[880px] max-w-full flex-wrap gap-4 px-2">
 	{#each filtered_resources as resource}
 		<a
 			href={resource.link}
-			class="flex rounded-xl outline-none focus:ring-3 focus:ring-blue-400 focus:ring-offset-2"
+			class="flex rounded-xl outline-none focus:ring-blue-400 focus:ring-offset-2 focus-visible:ring-3"
 			target="_blank"
 		>
 			<div
-				class="flex w-full cursor-pointer flex-col rounded-xl border border-zinc-300 bg-zinc-200 p-4 transition outline-none hover:border-zinc-400 hover:bg-zinc-200 md:w-64"
+				class="flex w-full cursor-pointer flex-col rounded-xl border border-zinc-300 bg-zinc-200/80 p-4 transition outline-none hover:border-zinc-400/50 hover:bg-zinc-200 md:w-64"
 			>
 				<div class="flex-1">
 					<p class="text-[19.6px] font-semibold text-zinc-700">{resource.name}</p>
