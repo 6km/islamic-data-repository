@@ -78,6 +78,13 @@ export const resources = [
 		author: 'فريق Every Ayah والمساهمون به',
 		link: 'https://everyayah.com/',
 		categories: ['api']
+	},
+	{
+		name: 'تنزيل Tanzil',
+		description: 'يُقدِّمُ بياناتِ النصِّ القرآني والترجمات وبعض الخطوط لعرض النص القرآني.',
+		author: 'Tanzil',
+		link: 'https://tanzil.net/docs/resources',
+		categories: ['quran', 'fonts']
 	}
 ];
 
