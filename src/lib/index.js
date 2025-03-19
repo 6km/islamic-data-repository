@@ -85,6 +85,13 @@ export const resources = [
 		author: 'Tanzil',
 		link: 'https://tanzil.net/docs/resources',
 		categories: ['quran', 'fonts']
+	},
+	{
+		name: 'QuranJS',
+		description: 'يُقدِّمُ بياناتِ النصِّ القرآني والترجمات وبعض الخطوط لعرض النص القرآني.',
+		author: 'Quran.com',
+		link: 'https://quranjs.com/',
+		categories: ['quran', 'api']
 	}
 ];
 
