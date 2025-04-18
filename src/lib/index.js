@@ -106,6 +106,13 @@ export const resources = [
 		author: 'مجمع الملك فهد لطباعة المصحف الشريف',
 		link: 'https://nashr.qurancomplex.gov.sa/',
 		categories: ['tools']
+	},
+	{
+		name: 'الختمة',
+		description: 'مشروع مفتوح المصدر تم بناؤه ليجمع كل ما يتعلق بالديانة الإسلامية (كالقرأن الكريم، والأحاديث الشريفة، والتفاسير، والأدعية، وغيرها) في مكان واحد.',
+		author: 'أسامة عوض',
+		link: 'https://github.com/oaokm/AL-Khatma',
+		categories: ['api', 'quran', 'hadeeth', 'others']
 	}
 ].map((r) => ({ ...r, categories: [...r.categories].sort() }));
 
