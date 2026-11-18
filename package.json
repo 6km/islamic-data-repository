@@ -29,6 +29,7 @@
 		"prettier": "^3.10.1",
 		"prettier-plugin-svelte": "^3.5.2",
 		"prettier-plugin-tailwindcss": "^0.6.14",
+		"rollup-license-plugin": "^3.2.1",
 		"svelte": "^5.57.3",
 		"svelte-check": "^4.7.8",
 		"tailwindcss": "^4.3.5",
