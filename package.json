@@ -16,9 +16,9 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.4.1",
 		"@eslint/js": "^9.39.5",
-		"@sveltejs/adapter-auto": "^4.0.0",
-		"@sveltejs/kit": "^2.70.4",
-		"@sveltejs/vite-plugin-svelte": "^5.1.1",
+		"@sveltejs/adapter-auto": "^8.0.1",
+		"@sveltejs/kit": "^3.3.1",
+		"@sveltejs/vite-plugin-svelte": "^7.3.1",
 		"@tailwindcss/forms": "^0.5.11",
 		"@tailwindcss/typography": "^0.5.20",
 		"@tailwindcss/vite": "^4.3.5",
@@ -33,7 +33,7 @@
 		"svelte-check": "^4.7.8",
 		"tailwindcss": "^4.3.5",
 		"typescript": "^5.9.3",
-		"vite": "^6.4.6"
+		"vite": "^8.3.8"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
