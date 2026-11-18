@@ -113,6 +113,13 @@ export const resources = [
 		author: 'أسامة عوض',
 		link: 'https://github.com/oaokm/AL-Khatma',
 		categories: ['api', 'quran', 'hadeeth', 'others']
+	},
+	{
+		name: 'Dorar Hadith',
+		description: 'مكتبة بلغة Dart تهدف إلى تسهيل التعامل والحصول على الأحاديث ومتعلقاتها من خلال موقع الدرر السنية.',
+		author: 'معاذ التميمي',
+		link: 'https://github.com/MoathCodes/dorar_hadith',
+		categories: ['api', 'hadeeth']
 	}
 ].map((r) => ({ ...r, categories: [...r.categories].sort() }));
 
