@@ -8,6 +8,8 @@ body {
     margin: 0;
     font-family: "Noto Naskh Arabic", serif;
     line-height: normal;
+    background-color: #141919;
+    color: whitesmoke;
 }
 
 img {
