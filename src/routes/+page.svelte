@@ -12,55 +12,78 @@
 			return r.categories.includes(selected_category);
 		})
 	);
-
-	$effect(() => {
-		console.log(filtered_resources);
-	});
 </script>
 
-<div class="mx-auto mt-4 flex w-[512px] max-w-full flex-wrap justify-center gap-2 px-2">
-	{#each Object.entries(categories) as [slug, category]}
-		<Button
-			class="font-semibold focus:ring-[#76C457] focus:ring-offset-2 focus-visible:ring-3 data-[selected=true]:bg-[#76C457] data-[selected=true]:text-white"
-			onclick={() => {
-				selected_category = slug;
-			}}
-			data-selected={selected_category === slug}
-		>
-			{category.name_ar}
-		</Button>
-	{/each}
-</div>
+<header class="mx-auto mt-4 max-w-[65ch] px-5 text-center">
+	<p class="text-[15px] leading-[1.9] text-stone-300">
+		قائمة بموارد وبيانات إسلامية تفيد المبرمجين في تطوير التطبيقات ومواقع الويب الإسلامية.
+	</p>
+</header>
 
-<div class="mx-auto mt-8 mb-8 flex w-[880px] max-w-full flex-wrap gap-4 px-2">
-	{#each filtered_resources as resource}
-		<a
-			href={resource.link}
-			class="flex rounded-xl outline-none focus:ring-[#76C457] focus:ring-offset-2 focus-visible:ring-3"
-			target="_blank"
-		>
-			<div
-				class="flex w-full cursor-pointer flex-col rounded-xl bg-[#2B3030] p-4 inset-shadow-sm inset-shadow-white/3 transition outline-none hover:bg-[#373D3D] active:scale-98 md:w-64"
+<section aria-label="تصفية المصادر" class="mx-auto mt-10 max-w-4xl px-5">
+	<div class="flex flex-wrap justify-center gap-2">
+		{#each Object.entries(categories) as [slug, category]}
+			<Button
+				class="data-[selected=true]:border-[#76C457]/50 data-[selected=true]:bg-[#4A7D36] data-[selected=true]:text-white"
+				aria-pressed={selected_category === slug}
+				onclick={() => {
+					selected_category = slug;
+				}}
+				data-selected={selected_category === slug}
 			>
-				<div class="flex-1">
-					<p class="text-[19.6px] font-semibold text-gray-200">{resource.name}</p>
-					<p class="mt-1.5 text-lg text-zinc-400">{resource.description}</p>
-				</div>
-				<div class="mt-2 text-[18px] leading-tight font-medium">
-					{#if resource.author}
-						<p>بواسطة {resource.author}</p>
-					{/if}
-				</div>
-				<div class="mt-3 flex flex-wrap gap-1.5 space-y-1">
+				{category.name_ar}
+			</Button>
+		{/each}
+	</div>
+</section>
+
+<section aria-label="المصادر" class="mx-auto mt-8 mb-20 max-w-6xl px-5">
+	<div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+		{#each filtered_resources as resource}
+			<a
+				href={resource.link}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="group flex flex-col rounded-2xl border border-white/10 bg-[#1b2121] p-5 transition duration-200 hover:-translate-y-1 hover:bg-[#202727]"
+			>
+				<h3 class="text-lg leading-snug font-semibold text-stone-100">{resource.name}</h3>
+				<p class="mt-2 flex-1 text-[15px] leading-[1.85] text-stone-300">
+					{resource.description}
+				</p>
+
+				<div class="mt-4 flex flex-wrap gap-1.5">
 					{#each resource.categories as category}
-						<div>
-							<span class={['rounded-full border px-2 pt-0.5 pb-0', categories[category].tag_class]}
-								>{categories[category].name_ar}</span
-							>
-						</div>
+						<span
+							class={[
+								'rounded-full border px-2.5 py-0.5 text-xs leading-5',
+								categories[category].tag_class
+							]}
+						>
+							{categories[category].name_ar}
+						</span>
 					{/each}
 				</div>
-			</div>
-		</a>
-	{/each}
-</div>
+
+				{#if resource.author}
+					<div
+						class="mt-4 flex items-center justify-between gap-2 border-t border-white/10 pt-3 text-xs text-stone-400"
+					>
+						<span>بواسطة {resource.author}</span>
+						<svg
+							class="h-4 w-4 shrink-0 transition-transform duration-200 group-hover:-translate-x-0.5"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.8"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="M17 17 7 7M16 7H7v9" />
+						</svg>
+					</div>
+				{/if}
+			</a>
+		{/each}
+	</div>
+</section>
