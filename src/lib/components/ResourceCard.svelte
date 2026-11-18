@@ -1,4 +1,6 @@
 <script>
+	import CategoryIcon from '$lib/components/CategoryIcon.svelte';
+
 	let { resource, categories } = $props();
 </script>
 
@@ -17,10 +19,11 @@
 		{#each resource.categories as category}
 			<span
 				class={[
-					'rounded-full border px-2.5 py-0.5 text-sm leading-5',
+					'inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-sm leading-5',
 					categories[category].tag_class
 				]}
 			>
+				<CategoryIcon name={category} class="h-3.5 w-3.5 shrink-0" />
 				{categories[category].name_ar}
 			</span>
 		{/each}

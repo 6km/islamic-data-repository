@@ -3,6 +3,7 @@
 
 	import { categories, resources } from '$lib';
 	import Button from '$lib/components/Button.svelte';
+	import CategoryIcon from '$lib/components/CategoryIcon.svelte';
 	import ResourceCard from '$lib/components/ResourceCard.svelte';
 
 	let selected_category = $state('all');
@@ -32,6 +33,7 @@
 				}}
 				data-selected={selected_category === slug}
 			>
+				<CategoryIcon name={slug} />
 				{category.name_ar}
 			</Button>
 		{/each}
