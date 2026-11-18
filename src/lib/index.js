@@ -120,41 +120,41 @@ export const categories = {
 	all: {
 		name_ar: 'الكل',
 		name_en: 'All',
-		tag_class: 'text-cyan-700 bg-blue-200'
+		tag_class: 'text-stone-300 bg-white/10 border-white/10'
 	},
 	fonts: {
 		name_ar: 'الخطوط',
 		name_en: 'Fonts',
-		tag_class: 'text-blue-400 bg-blue-500/30 border-blue-400/30'
+		tag_class: 'text-sky-300 bg-sky-400/10 border-sky-400/25'
 	},
 	quran: {
 		name_ar: 'القرآن الكريم وعلومه',
 		name_en: 'Quran',
-		tag_class: 'text-purple-400 bg-purple-500/30 border-purple-400/30'
+		tag_class: 'text-violet-300 bg-violet-400/10 border-violet-400/25'
 	},
 	telawat: {
 		name_ar: 'تلاوات القرآن',
 		name_en: 'Quran Recitations',
-		tag_class: 'text-red-400 bg-red-400/20 border-red-400/20'
+		tag_class: 'text-rose-300 bg-rose-400/10 border-rose-400/25'
 	},
 	tools: {
 		name_ar: 'أدوات وبرامج',
 		name_en: 'Tools & Programs',
-		tag_class: 'text-pink-400 bg-pink-500/20 border-pink-400/30'
+		tag_class: 'text-pink-300 bg-pink-400/10 border-pink-400/25'
 	},
 	hadeeth: {
 		name_ar: 'الأحاديث',
 		name_en: 'Hadeeth',
-		tag_class: 'text-emerald-400 bg-emerald-500/30 border-emerald-400/20'
+		tag_class: 'text-emerald-300 bg-emerald-400/10 border-emerald-400/25'
 	},
 	api: {
 		name_ar: 'واجهة برمجة التطبيقات (API)',
 		name_en: 'Hadeeth',
-		tag_class: 'text-orange-400 bg-orange-500/15 border-orange-400/20'
+		tag_class: 'text-amber-300 bg-amber-400/10 border-amber-400/25'
 	},
 	others: {
 		name_ar: 'أُخرى',
 		name_en: 'Others',
-		tag_class: 'text-zinc-400 bg-zinc-500/30 border-zinc-400/20'
+		tag_class: 'text-stone-300 bg-white/10 border-white/10'
 	}
 };
