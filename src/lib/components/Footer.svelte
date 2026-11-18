@@ -1,4 +1,4 @@
-<footer class="border-t border-t-zinc-300 pt-12 pb-12 text-center text-xl font-semibold">
+<footer class="border-t border-t-white/10 pt-12 pb-12 text-center text-xl font-semibold">
 	<h4 class="mx-auto w-[36ch] max-w-full leading-9">
 		هذا الموقع مفتوح المصدر على
 		<a
