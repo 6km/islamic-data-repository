@@ -15,7 +15,7 @@
 </script>
 
 <header class="mx-auto mt-4 max-w-[65ch] px-5 text-center">
-	<p class="text-[15px] leading-[1.9] text-stone-300">
+	<p class="text-base leading-[1.9] text-stone-300">
 		قائمة بموارد وبيانات إسلامية تفيد المبرمجين في تطوير التطبيقات ومواقع الويب الإسلامية.
 	</p>
 </header>
@@ -46,8 +46,8 @@
 				rel="noopener noreferrer"
 				class="group flex flex-col rounded-2xl border border-white/10 bg-[#1b2121] p-5 transition duration-200 hover:-translate-y-1 hover:bg-[#202727]"
 			>
-				<h3 class="text-lg leading-snug font-semibold text-stone-100">{resource.name}</h3>
-				<p class="mt-2 flex-1 text-[15px] leading-[1.85] text-stone-300">
+				<h3 class="text-xl leading-snug font-semibold text-stone-100">{resource.name}</h3>
+				<p class="mt-2 flex-1 text-base leading-[1.85] text-stone-300">
 					{resource.description}
 				</p>
 
@@ -55,7 +55,7 @@
 					{#each resource.categories as category}
 						<span
 							class={[
-								'rounded-full border px-2.5 py-0.5 text-xs leading-5',
+								'rounded-full border px-2.5 py-0.5 text-sm leading-5',
 								categories[category].tag_class
 							]}
 						>
@@ -66,7 +66,7 @@
 
 				{#if resource.author}
 					<div
-						class="mt-4 flex items-center justify-between gap-2 border-t border-white/10 pt-3 text-xs text-stone-400"
+						class="mt-4 flex items-center justify-between gap-2 border-t border-white/10 pt-3 text-sm text-stone-400"
 					>
 						<span>بواسطة {resource.author}</span>
 						<svg
