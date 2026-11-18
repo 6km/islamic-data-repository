@@ -2,17 +2,52 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+:root {
+	color-scheme: dark;
+}
+
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: "Noto Naskh Arabic", serif;
-    line-height: normal;
-    background-color: #141919;
-    color: whitesmoke;
+	padding: 0;
+	margin: 0;
+	font-family: 'Noto Naskh Arabic', serif;
+	line-height: 1.8;
+	background-color: #141919;
+	color: #f5f5f4;
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	background: #76c457;
+	color: #141919;
+}
+
+:focus-visible {
+	outline: 2px solid #76c457;
+	outline-offset: 3px;
+}
+
+* {
+	scrollbar-color: #36403f #141919;
+	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #141919;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #36403f;
+	border: 2px solid #141919;
+	border-radius: 999px;
 }
 
 img {
-    user-select: none;
-    pointer-events: none;
+	user-select: none;
+	pointer-events: none;
 }
